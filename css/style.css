@@ -50,7 +50,13 @@ body {
     max-width: 1093px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 15px;
+}
+
+@media only screen and (min-width: 480px) {
+    .container {
+        padding: 0;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -71,7 +77,7 @@ body {
 
 @media only screen and (min-width: 480px) {
     .date {
-        padding: 0px 47px;
+        padding: 0px 82px;
     }
 }
 
@@ -114,9 +120,10 @@ body {
     padding-left: 19px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 480px) {
     .income ul {
-        padding-left: 36px;
+        padding-left: 56px;
+        padding-right: 15px;
     }
     .income {
         margin-bottom: 39px;
@@ -135,20 +142,31 @@ body {
     .income p {
         text-align: left;
     }
+    .income ul {
+        padding-left: 36px;
+        padding-right: 0px;
+    }
 }
 
-.income li {
+.income li, .course-list li {
     position: relative;
 }
 
-.income li:before {
+.income li:before, .course-list li:before {
     content: "";
     position: absolute;
     width: 16px;
     height: 13px;
     background: url(../img/treugolnik.png) no-repeat;
-    left: -34px;
-    top: 9px;
+    left: -21px;
+    top: 5px;
+}
+
+@media only screen and (min-width: 480px) {
+    .income li:before {
+        left: -34px;
+        top: 9px;
+    }
 }
 
 header {
@@ -178,7 +196,7 @@ header {
     }
     .tatyana {
         width: 520px;
-        height: 478px;
+        height: 470px;
         overflow: hidden;
         display: block;
         position: absolute;
@@ -196,10 +214,17 @@ header {
     text-align: center;
 }
 
+@media only screen and (min-width: 480px) {
+    .just-now {
+        padding: 0 21px;
+    }
+}
+
 @media only screen and (min-width: 1100px) {
     .just-now {
         text-align: left;
         margin-bottom: 28px;
+        padding: 0;
     }
 }
 
@@ -225,4 +250,261 @@ header {
 
 .about-practice_inner {
     padding: 0 26px;
+}
+
+.regBtn {
+    display: inline-block;
+    padding: 18px 18px;
+    box-shadow: 0 0 21px #e2206e;
+    border-radius: 10px;
+    background-color: #000000;
+    background-image: linear-gradient(to top, #aa0c4b 0%, #f32678 100%);
+    font-family: "Geometria";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .regBtn {
+        padding: 12px 32px;
+        font-size: 18px;
+    }
+}
+
+.regBtn-top {
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 43px;
+}
+
+.regBtn-top p {
+    font-family: "Geometria-Bold";
+    color: #686868;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-bottom: 36px;
+}
+
+@media only screen and (min-width: 1100px) {
+    .regBtn-top {
+        padding-top: 42px;
+        padding-bottom: 66px;
+    }
+    .regBtn-top p {
+        padding-bottom: 33px;
+    }
+}
+
+.regBtn-top span {
+    font-family: "Geometria";
+    font-weight: 400;
+    text-decoration: line-through;
+    padding: 0 15px;
+}
+
+.QuestionToYourself {
+    padding-top: 68px;
+    padding-bottom: 27px;
+    background: url(../img/bg2-mobile.jpg) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .QuestionToYourself {
+        background: url(../img/bg2.jpg) no-repeat top center;
+        background-size: cover;
+        padding-top: 42px;
+    }
+}
+
+.Question-text {
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.Question-text span {
+    font-family: "Geometria-Heavy";
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "AdelleCyrillic-Extrabold";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.QuestionToYourself h2 {
+    margin-bottom: 22px;
+}
+
+@media only screen and (min-width: 480px) {
+    .QuestionToYourself h2 {
+        margin-bottom: 48px;
+        padding: 0 10px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
+.Question-money .Question-img {
+    margin-bottom: 23px;
+}
+
+.Question-money {
+    margin-bottom: 11px;
+}
+
+.Question-island p {
+    padding-top: 49px;
+}
+
+.Question-island {
+    margin-bottom: 32px;
+}
+
+.Question-home {
+    margin-bottom: 40px;
+}
+
+.Question-home .Question-img {
+    margin-bottom: 18px;
+}
+
+.Question-home .Question-text {
+    padding: 0 3px;
+}
+
+@media only screen and (min-width: 768px) {
+    .Question-money, .Question-island, .Question-home {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Question-text {
+        max-width: 341px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .QuestionToYourself {
+        padding-bottom: 19px;
+    }
+    .Question-home {
+        margin-top: -120px;
+        margin-left: -9px;
+        margin-bottom: 0;
+    }
+    .Question-home br {
+        display: none;
+    }
+    .Question-home .Question-text {
+        max-width: 431px;
+        width: 100%;
+        margin-top: 122px;
+        margin-left: auto;
+    }
+    .QuestionToYourself .container {
+        max-width: 980px;
+        width: 100%;
+    }
+    .Question-island .Question-img {
+        order: 2;
+        margin-left: auto;
+        margin-top: -128px;
+        margin-right: 31px;
+    }
+    .Question-island .Question-text {
+        order: 1;
+        max-width: 473px;
+        width: 100%;
+    }
+    .Question-money .Question-text {
+        margin-left: 97px;
+        margin-top: 89px;
+    }
+    .Question-money br {
+        display: none;
+    }
+    .Question-island p {
+        padding-top: 18px;
+        text-align: right;
+    }
+    .Question-island br {
+        display: none;
+    }
+}
+
+.course-title {
+    color: black;
+    text-align: center;
+    padding-top: 49px;
+    padding-bottom: 29px;
+}
+
+.course-title h2{
+    line-height: 31px;
+}
+
+.course-title p {
+    font-family: "Geometria";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+.course-block {
+    background: url(../img/course-mob.jpg) no-repeat top center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 34px;
+}
+
+.course-block p {
+    text-align: center;
+    font-family: "Geometria";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 25px;
+}
+
+.course-list {
+    padding: 0px 29px;
+}
+
+.course-list li {
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 22px;
+}
+
+.course-block_img {
+    max-width: 443px;
+    width: 100%;
+    height: 297px;
+    background: url(../img/img01-mobile.png) no-repeat top center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 480px) {
+    .CourseProgram .container {
+        padding: 0 18px;
+    }
 }
