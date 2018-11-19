@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe, h1, h2, h4, h5, h3, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+span {
+    display: inline-block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%
+}
+
+body {
+    color: white;
+}
+
+.container {
+    max-width: 1093px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+@media only screen and (min-width: 1100px) {
+    .container {
+        padding: 0 3px;
+    }
+}
+
+.date {
+    color: #f0ff00;
+    font-family: "Geometria";
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+    .date {
+        padding: 0px 47px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .date {
+        margin-bottom: 75px;
+    }
+}
+
+.main-title {
+    font-family: "AdelleCyrillic-Extrabold";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 57px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+    .main-title {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .main-title {
+        margin-bottom: 49px;
+    }
+}
+
+.income {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Geometria";
+    margin-bottom: 41px;
+}
+
+.income ul {
+    padding-left: 19px;
+}
+
+@media only screen and (min-width: 1100px) {
+    .income ul {
+        padding-left: 36px;
+    }
+    .income {
+        margin-bottom: 39px;
+        font-size: 21px;
+    }
+}
+
+.income p {
+    font-family: "Geometria-Bold";
+    font-weight: 700;
+    padding-bottom: 29px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+    .income p {
+        text-align: left;
+    }
+}
+
+.income li {
+    position: relative;
+}
+
+.income li:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url(../img/treugolnik.png) no-repeat;
+    left: -34px;
+    top: 9px;
+}
+
+header {
+    background: url(../img/bg-mobile.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 36px 0px 60px;
+}
+
+.tatyana {
+    display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+    header {
+        background: url(../img/bg.jpg) no-repeat top center;
+        background-size: cover;
+        padding: 40px 0px 0px;
+    }
+    .tatyana-box {
+        padding-bottom: 65px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    header .container {
+        position: relative;
+    }
+    .tatyana {
+        width: 520px;
+        height: 478px;
+        overflow: hidden;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: -27px;
+    }
+}
+
+.just-now {
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+    .just-now {
+        text-align: left;
+        margin-bottom: 28px;
+    }
+}
+
+.about-practice {
+    font-family: "AdelleCyrillic-SemiBold";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 28px 0px 30px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+    .about-practice {
+        max-width: 1093px;
+        width: 100%;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 10px 0px 10px;
+    }
+}
+
+.about-practice_inner {
+    padding: 0 26px;
+}

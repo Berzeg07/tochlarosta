@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* example =========================== */
+
+@font-face {
+    font-family: "AdelleCyrillic-Extrabold";
+    src: url("../fonts/AdelleCyrillic-Extrabold/AdelleCyrillic-Extrabold.eot");
+    src: local("☺"), url("../fonts/AdelleCyrillic-Extrabold/AdelleCyrillic-Extrabold.woff") format("woff"), url("../fonts/AdelleCyrillic-Extrabold/AdelleCyrillic-Extrabold.ttf") format("truetype"), url("../fonts/AdelleCyrillic-Extrabold/AdelleCyrillic-Extrabold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdelleCyrillic-SemiBold";
+    src: url("../fonts/AdelleCyrillic-SemiBold/AdelleCyrillic-SemiBold.eot");
+    src: local("☺"), url("../fonts/AdelleCyrillic-SemiBold/AdelleCyrillic-SemiBold.woff") format("woff"), url("../fonts/AdelleCyrillic-SemiBold/AdelleCyrillic-SemiBold.ttf") format("truetype"), url("../fonts/AdelleCyrillic-SemiBold/AdelleCyrillic-SemiBold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/Geometria/Geometria.eot");
+    src: local("☺"), url("../fonts/Geometria/Geometria.woff") format("woff"), url("../fonts/Geometria/Geometria.ttf") format("truetype"), url("../fonts/Geometria/Geometria.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria-Bold";
+    src: url("../fonts/Geometria-Bold/Geometria-Bold.eot");
+    src: local("☺"), url("../fonts/Geometria-Bold/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold/Geometria-Bold.ttf") format("truetype"), url("../fonts/Geometria-Bold/Geometria-Bold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria-Heavy";
+    src: url("../fonts/Geometria-Heavy/Geometria-Heavy.eot");
+    src: local("☺"), url("../fonts/Geometria-Heavy/Geometria-Heavy.woff") format("woff"), url("../fonts/Geometria-Heavy/Geometria-Heavy.ttf") format("truetype"), url("../fonts/Geometria-Heavy/Geometria-Heavy.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria-Light";
+    src: url("../fonts/Geometria-Light/Geometria-Light.eot");
+    src: local("☺"), url("../fonts/Geometria-Light/Geometria-Light.woff") format("woff"), url("../fonts/Geometria-Light/Geometria-Light.ttf") format("truetype"), url("../fonts/Geometria-Light/Geometria-Light.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
