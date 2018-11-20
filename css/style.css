@@ -148,11 +148,11 @@ body {
     }
 }
 
-.income li, .course-list li {
+.income li, .course-list li, .autor-list li {
     position: relative;
 }
 
-.income li:before, .course-list li:before {
+.income li:before, .course-list li:before, .autor-list li:before {
     content: "";
     position: absolute;
     width: 16px;
@@ -163,7 +163,7 @@ body {
 }
 
 @media only screen and (min-width: 480px) {
-    .income li:before {
+    .income li:before, .course-list li:before, .autor-list li:before {
         left: -34px;
         top: 9px;
     }
@@ -267,6 +267,11 @@ header {
     text-decoration: none;
 }
 
+.regBtn:hover {
+    background-image: linear-gradient(to top, #211b49 0%, #952e7f 100%);
+    box-shadow: 0 0 21px #4d265d;
+}
+
 @media only screen and (min-width: 480px) {
     .regBtn {
         padding: 12px 32px;
@@ -280,7 +285,7 @@ header {
     padding-bottom: 43px;
 }
 
-.regBtn-top p {
+.regBtn-top p, .regBtn-bottom p {
     font-family: "Geometria-Bold";
     color: #686868;
     font-size: 21px;
@@ -299,7 +304,7 @@ header {
     }
 }
 
-.regBtn-top span {
+.regBtn-top span, .regBtn-bottom span {
     font-family: "Geometria";
     font-weight: 400;
     text-decoration: line-through;
@@ -384,11 +389,12 @@ h2 {
     padding: 0 3px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .Question-money, .Question-island, .Question-home {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .Question-text {
@@ -471,7 +477,13 @@ h2 {
     background-size: cover;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 992px) {
+    .course-block {
+        margin-bottom: 41px;
+    }
 }
 
 .course-block p {
@@ -504,7 +516,6 @@ h2 {
 }
 
 .course-block-img {
-    /*max-width: 443px;*/
     width: 100%;
     height: 297px;
     background: url(../img/img01-mobile.png) no-repeat top center;
@@ -515,11 +526,13 @@ h2 {
 .course-block-img__2 {
     background: url(../img/img02-mobile.png) no-repeat top center;
     background-size: cover;
+    height: 292px;
 }
 
 .course-block-img__3 {
     background: url(../img/img03-mobile.png) no-repeat top center;
     background-size: cover;
+    height: 274px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -528,6 +541,9 @@ h2 {
         width: 100%;
         padding: 0 18px;
     }
+    /*.course-block_middle{
+        margin-bottom: 40px;
+    }*/
 }
 
 @media only screen and (min-width: 500px) {
@@ -594,5 +610,206 @@ h2 {
     }
     .course-list_third {
         max-width: 650px;
+    }
+}
+
+.regBtn-center {
+    max-width: 1165px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 87px;
+    padding-top: 33px;
+}
+
+.regBtn-center h2 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 32px;
+    padding-top: 16px;
+}
+
+.regBtn-center_article {
+    color: black;
+    text-align: center;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.regBtn-center_article p {
+    margin-bottom: 21px;
+}
+
+.regBtn-center_article p:nth-child(2) {
+    font-family: "Geometria-Bold";
+    font-weight: 700;
+}
+
+.autor {
+    background: url(../img/bg3-mobile.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 56px 22px 15px 22px;
+}
+
+.autor h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.autor-article {
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 73px;
+}
+
+.autor-article p {
+    text-align: center;
+}
+
+.autor-article span, .knowledge-title {
+    font-family: "Geometria-Bold";
+    font-weight: 700;
+}
+
+.knowledge-title {
+    padding: 42px 0px 40px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.autor-list {
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.autor-list li {
+    margin-bottom: 21px;
+    padding-left: 21px;
+}
+
+.autor-list li:before {
+    left: -4px;
+    top: 3px;
+}
+
+.autor-name {
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.autor .container {
+    max-width: 1133px;
+    width: 100%;
+}
+
+.autor-img {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .autor {
+        background: url(../img/bg3.jpg) no-repeat top center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1177px) {
+    .autor h2 {
+        margin-bottom: 52px;
+    }
+    .autor {
+        padding: 62px 22px 38px 22px;
+    }
+    .regBtn-center h2 {
+        margin-bottom: 33px;
+        padding-top: 52px;
+    }
+    .autor-img {
+        text-align: left;
+    }
+    .autor-about {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .autor-article {
+        max-width: 661px;
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 13px;
+    }
+    .autor-article p {
+        text-align: left;
+    }
+    .regBtn-center {
+        padding-top: 10px;
+        margin-bottom: 106px;
+    }
+    .knowledge-title {
+        padding: 42px 0px 23px;
+    }
+    .autor-article .autor-list {
+        padding-left: 13px;
+    }
+}
+
+.regBtn-bottom {
+    text-align: center;
+    color: black;
+    padding: 45px 0px 56px;
+}
+
+footer {
+    background: url(../img/bg-footer-mobile.jpg) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    padding: 29px 0px 26px;
+    font-family: "Geometria";
+    font-size: 18px;
+    line-height: 23px;
+}
+
+footer li{
+    margin-bottom: 34px;
+}
+
+.privacyPolicy a{
+    color: white;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+footer .container{
+    max-width: 1172px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .privacyPolicy br{
+        display: none;
+    }
+    footer{
+        background: url(../img/bg-footer.jpg) no-repeat top center;
+        background-size: cover;
+    }
+    footer ul{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer ul li:first-child{
+        text-align: left;
+    }
+    footer ul li:last-child{
+        text-align: right;
     }
 }
