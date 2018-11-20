@@ -513,6 +513,7 @@ h2 {
 
 .course-list li:before {
     left: -33px;
+    top: 1px;
 }
 
 .course-block-img {
@@ -626,7 +627,7 @@ h2 {
     font-size: 25px;
     color: black;
     margin-bottom: 32px;
-    padding-top: 16px;
+    padding-top: 18px;
 }
 
 .regBtn-center_article {
@@ -763,53 +764,86 @@ h2 {
 .regBtn-bottom {
     text-align: center;
     color: black;
-    padding: 45px 0px 56px;
+    padding: 38px 0px 57px;
+}
+
+.regBtn-bottom h2 {
+    margin-bottom: 18px;
+}
+
+.regBtn-bottom p {
+    padding-bottom: 29px;
+}
+
+.regBtn-bottom a {
+    padding: 12px 46px;
 }
 
 footer {
     background: url(../img/bg-footer-mobile.jpg) no-repeat top center;
     background-size: cover;
     text-align: center;
-    padding: 29px 0px 26px;
+    padding: 27px 0px 26px;
     font-family: "Geometria";
     font-size: 18px;
-    line-height: 23px;
+    line-height: 22px;
 }
 
-footer li{
-    margin-bottom: 34px;
+footer p a {
+    color: white;
+    text-decoration: none;
 }
 
-.privacyPolicy a{
+footer li {
+    margin-bottom: 26px;
+}
+
+.privacyPolicy a {
     color: white;
     text-decoration: underline;
     opacity: 0.5;
 }
 
-footer .container{
-    max-width: 1172px;
+footer .container {
+    max-width: 1202px;
     width: 100%;
+    padding: 0 15px;
 }
 
-@media only screen and (min-width: 768px) {
-    .privacyPolicy br{
+@media only screen and (min-width: 992px) {
+    footer li {
+        margin-bottom: 9px;
+    }
+    footer {
+        padding: 39px 0px 26px;
+    }
+    footer .container {
+        padding: 0 15px;
+    }
+    footer br {
         display: none;
     }
-    footer{
+    footer {
         background: url(../img/bg-footer.jpg) no-repeat top center;
         background-size: cover;
     }
-    footer ul{
+    footer ul {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    footer ul li:first-child{
+    footer ul li:first-child {
         text-align: left;
     }
-    footer ul li:last-child{
+    footer ul li:last-child {
         text-align: right;
+    }
+    footer li p {
+        margin-bottom: 17px;
+    }
+    .regBtn-bottom {
+        padding: 48px 0px 61px;
     }
 }
