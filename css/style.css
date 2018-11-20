@@ -363,6 +363,7 @@ h2 {
 
 .Question-money .Question-img {
     margin-bottom: 23px;
+    margin-right: auto;
 }
 
 .Question-money {
@@ -404,6 +405,10 @@ h2 {
     }
 }
 
+.Question-home .br_h{
+    display: none;
+}
+
 @media only screen and (min-width: 1100px) {
     .QuestionToYourself {
         padding-bottom: 19px;
@@ -416,6 +421,7 @@ h2 {
     .Question-home br {
         display: none;
     }
+
     .Question-home .Question-text {
         max-width: 431px;
         width: 100%;
@@ -438,18 +444,19 @@ h2 {
         width: 100%;
     }
     .Question-money .Question-text {
-        margin-left: 97px;
+        /*margin-left: 97px;*/
         margin-top: 89px;
+        margin-right: auto;
     }
-    .Question-money br {
-        display: none;
+    .Question-money .span-br{
+        display: block;
     }
     .Question-island p {
         padding-top: 18px;
         text-align: right;
     }
     .Question-island br {
-        display: none;
+        /*display: none;*/
     }
 }
 
@@ -717,6 +724,10 @@ h2 {
     .autor {
         background: url(../img/bg3.jpg) no-repeat top center;
         background-size: cover;
+    }
+    .autor-list li:before {
+        left: -16px;
+        top: 3px;
     }
 }
 
