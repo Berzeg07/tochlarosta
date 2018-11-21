@@ -31,11 +31,13 @@ span {
 }
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 img {
@@ -255,9 +257,13 @@ header {
 .regBtn {
     display: inline-block;
     padding: 18px 18px;
-    box-shadow: 0 0 21px #e2206e;
+    -webkit-box-shadow: 0 0 21px #e2206e;
+            box-shadow: 0 0 21px #e2206e;
     border-radius: 10px;
     background-color: #000000;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#aa0c4b), to(#f32678));
+    background-image: -webkit-linear-gradient(bottom, #aa0c4b 0%, #f32678 100%);
+    background-image: -o-linear-gradient(bottom, #aa0c4b 0%, #f32678 100%);
     background-image: linear-gradient(to top, #aa0c4b 0%, #f32678 100%);
     font-family: "Geometria";
     font-size: 15px;
@@ -268,8 +274,12 @@ header {
 }
 
 .regBtn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#211b49), to(#952e7f));
+    background-image: -webkit-linear-gradient(bottom, #211b49 0%, #952e7f 100%);
+    background-image: -o-linear-gradient(bottom, #211b49 0%, #952e7f 100%);
     background-image: linear-gradient(to top, #211b49 0%, #952e7f 100%);
-    box-shadow: 0 0 21px #4d265d;
+    -webkit-box-shadow: 0 0 21px #4d265d;
+            box-shadow: 0 0 21px #4d265d;
 }
 
 @media only screen and (min-width: 480px) {
@@ -392,11 +402,15 @@ h2 {
 
 @media only screen and (min-width: 992px) {
     .Question-money, .Question-island, .Question-home {
-        display: -webkit-flex;
         display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .Question-text {
         max-width: 341px;
@@ -433,13 +447,17 @@ h2 {
         width: 100%;
     }
     .Question-island .Question-img {
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
         margin-left: auto;
         margin-top: -128px;
         margin-right: 31px;
     }
     .Question-island .Question-text {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
         max-width: 473px;
         width: 100%;
     }
@@ -598,8 +616,9 @@ h2 {
         width: 100%;
     }
     .course-block {
-        display: -webkit-flex;
         display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .CourseProgram .container {
@@ -746,10 +765,12 @@ h2 {
         text-align: left;
     }
     .autor-about {
-        display: -webkit-flex;
         display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .autor-article {
         max-width: 661px;
@@ -839,11 +860,15 @@ footer .container {
         background-size: cover;
     }
     footer ul {
-        display: -webkit-flex;
         display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     footer ul li:first-child {
         text-align: left;
